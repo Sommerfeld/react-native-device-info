@@ -4,7 +4,7 @@
 
 var RNDeviceInfo = require('react-native').NativeModules.RNDeviceInfo;
 
-module.exports = {
+export default {
   getUniqueID: function () {
     return RNDeviceInfo && RNDeviceInfo.uniqueId;
   },
